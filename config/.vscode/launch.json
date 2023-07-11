@@ -1,0 +1,37 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "@zwx Python: with args",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            // just give an example
+            "args": [
+                "--dataset",
+                "private_v1",
+                "--data_folder",
+                "../../data/",
+                "--seed",
+                "1",
+                "--class_split",
+                "group",
+            ],
+            "cwd": "${fileDirname}"
+        },
+        {
+            "name": "@zwx Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${fileDirname}"
+        }
+    ]
+}
